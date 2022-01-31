@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+        .loginbox{
+            width: 420px;
+            height: 450px;
+            background: #fff;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+            opacity: 0.85;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: calc(50% - 50px);
+        }
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .loginbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        .loginbox input{
+            width: 100%;
+            margin-bottom: 20px;   
+        }
+        .loginbox input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            background: transparent;
+            height: 40px;
+            color: #000;
+            font-size: 16px;
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #cc6d00;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <div style="display: block" id="tudo">
+          <div style="float: right; margin-top: -40px"><a href="index.html" style="cursor: pointer"><big> &times;</big></a></div>
+          <h1>Por favor introduza as informações:</h1>
+          <p>Nº Telemóvel</p>
+          <input id="telemovel" type="text" name="" placeholder="Insira o Seu Nº telemóvel">
+          <p>Password</p>
+          <input id="password" type="password" name="" placeholder="Insira a Sua Password">
+          <input id="sub" type="submit" name="" value="Confirmar" onclick ="return validate()">
+          <h5 id="error_message" style="color: red; text-align: center; display: none;"><small><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Número de telemóvel inválido ou palavra-passe inválidos</small></h5>
+        </div>
+          <h1 id="h1" style="display: none">Obrigado pela sua escolha! Após o pagamento ser efetuado, todas as informações serão enviadas para o seu email.</h1>
+          <button id="botao" class="btn btn-outline-success" style="display: none; margin-top: 20px" onclick="location.href='index.html'">Página Inicial</button>
+    </div>
+    <script src="../../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script>
+        function validate(){
+                var retVal = true;
+                var val_telemovel = $('#telemovel').val().trim();
+                var val_password = $("#password").val().trim();
+
+                        if (val_telemovel.length == 9 || (val_password.length > 5 && val_password.length < 16)) {
+                            $('#error_message').hide();
+                            $('#tudo').hide();
+                            $('#botao').show();
+                            $('#h1').show();
+                            $('#caixa').css('height', '300px');
+                            console.log('Success');
+
+                            
+                        }else{
+                            $('#error_message').show();
+                            retVal = false
+                        }
+                }
+    </script>
+
+</body>
+</html>

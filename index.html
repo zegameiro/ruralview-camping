@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RuralView Camping Website</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        .aa:hover {
+            color: green !important;
+        }
+
+        .probootstrap-owl-prev:hover {
+            background-color: green !important
+        }
+
+        .probootstrap-owl-next:hover {
+            background-color: green !important
+        }
+
+        /* Custom style to prevent carousel from being distorted
+        if for some reason image doesn't load */
+        .carousel-item {
+            min-height: 280px;
+        }
+
+        #sair:hover{
+            background: #d76f00;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- START: header -->
+
+    <header role="banner" class="probootstrap-header">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <a href="index.html" class="probootstrap-logo visible-xs"><img src="imagens/RuralView.png"  style="height: 150px; width:150px;"></a>
+
+            <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+            <div class="mobile-menu-overlay"></div>
+
+            <nav role="navigation" class="probootstrap-nav hidden-xs">
+                <ul class="probootstrap-main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parques.html">Parques</a></li>
+                    <li><a href="about.html">About</a></li>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="imagens/RuralView.png" class="hires" width="200" height="100"></a></li>
+                    <li id="log"><a class="btn btn-success btn-lg" href="login_form.html"><i class="icon-user"></i> Login</a></li>
+                    <li id="sig"><a class="btn btn-outline-dark btn-lg" href="signup_form.html"><i class="icon-add-user"></i> Sign Up</a></li>
+                    <li id="rem" style="display: none">Bem vindo <u><span style="color: forestgreen" id="bem"></span></u> !</li>
+                    <li style="position: absolute; margin-top: 30px"><button class="btn btn-outline-danger" onclick="location.href = 'sair.html'" id="sair"><i class="fa fa-sign-out" aria-hidden="true"></i>Sa</button></li>
+                </ul>
+                <div class="extra-text visible-xs">
+                    <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+                </div>
+            </nav>
+        </div>
+        <!-- </div> -->
+    </header>
+    <!-- END: header -->
+    <section class="probootstrap-slider flexslider">
+        <ul class="slides">
+            <li style="background-image: url('https://cdn.pixabay.com/photo/2018/12/24/22/19/camping-3893587_960_720.jpg'); opacity:40%" class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="probootstrap-slider-text text-center">
+                                <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt=""></p>
+                                <h1 class="probootstrap-heading probootstrap-animate">Bem Vindo à RuralView Camping</h1>
+                                <div class="probootstrap-animate probootstrap-sub-wrap">Choose Nature, Experience Life </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url('https://cdn.pixabay.com/photo/2019/03/27/17/05/azores-4085452_960_720.jpg');" class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="probootstrap-slider-text text-center">
+                                <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt=""></p>
+                                <h1 class="probootstrap-heading probootstrap-animate">Venha conhecer o interior de Portugal</h1>
+                                <div class="probootstrap-animate probootstrap-sub-wrap">Experencie um nova aventura, conheça novos locais, paisagens, pessoas e deixe que a RuralView Camping o ajude a encontrar o sítio perfeito para acampar.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </section>
+
+    <section class="probootstrap-cta probootstrap-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="probootstrap-cta-heading">Faça a sua reserva em Barca D'alva agora.</h2>
+                    <div class="probootstrap-cta-button-wrap"><a href="barcadalva.html" class="btn" style="background-color:green; color:white">Reservar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2>Os nossos serviços</h2>
+                    <p><img src="https://cdn.discordapp.com/attachments/899659802454671425/935999095267536946/1643229962102.png" style="height:80px; width:300px" class="svg" alt=""></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service left-icon probootstrap-animate">
+                        <div class="text">
+                            <h3>Vários parques espalhados pelas zonas rurais de Portugal</h3>
+                            <p>Existem diversos parques que estão à sua espera!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service left-icon probootstrap-animate">
+                        <div class="text">
+                            <h3>Atividades</h3>
+                            <p>Imensas atividades que lhe iram proporcionar novas experências, fazendo assim com que a sua estadia no parque seja a inesquecível.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service left-icon probootstrap-animate">
+                        <div class="text">
+                            <h3>Equipamentos para acampar</h3>
+                            <p>Quer acampar mas não possui os materiais necessários? A RuralView Camping disponibiliza os materiais necessários para acampar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section probootstrap-section-dark">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2>Melhores parques</h2>
+                    <p class="lead">Estes são os parques favoritos dos amantes da natureza.</p>
+                </div>
+            </div>
+            <div class="row probootstrap-gutter10">
+                <div class="col-md-6">
+                    <div class="probootstrap-block-image-text">
+                        <figure>
+                            <a href="https://www.lima-escape.pt/wp-content/uploads/2018/10/Tipi-Tent.jpg" class="image-popup">
+                                <img src="https://www.lima-escape.pt/wp-content/uploads/2018/10/Tipi-Tent.jpg" alt="" class="img-responsive" style="height:380px; width:600px">
+                            </a>
+                        </figure>
+                        <div class="text">
+                            <h3><a class="aa" href="LimaEscape.html">Lima Escape</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><span class="review-rate">4.4</span> <i class="icon-star"></i> 4 Reviews</li>
+                                </ul>
+                            </div>
+                            <p><a href="LimaEscape.html" class="btn" style="background-color: green; color:white">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="probootstrap-block-image-text">
+                        <figure>
+                            <a href="https://cdn.discordapp.com/attachments/899659802454671425/935971899924684862/barca_de_alva.jpg" class="image-popup">
+                                <img src="https://cdn.discordapp.com/attachments/899659802454671425/935971899924684862/barca_de_alva.jpg" alt="" class="img-responsive">
+                            </a>
+                        </figure>
+                        <div class="text">
+                            <h3><a class="aa" href="barcadalva.html">Parque de Campismo de Barca D'Alva</a></h3>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><span class="review-rate">4.5</span> <i class="icon-star"></i>8 Reviews</li> &nbsp;
+                                    <span style="color: green">Da RuralView Camping</span>
+                                </ul>
+                            </div>
+                            <p><a href="barcadalva.html" class="btn" style="background-color: green; color:white">Mais detalhes</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 probootstrap-relative">
+                    <h3 class="mt0 mb30">Atividades mais procuradas</h3>
+                    <ul class="probootstrap-owl-navigation absolute right">
+                        <li><a href="#" class="probootstrap-owl-prev"><i class="icon-chevron-thin-left"></i></a></li>
+                        <li><a href="#" class="probootstrap-owl-next"><i class="icon-chevron-thin-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 probootstrap-relative">
+                    <div class="owl-carousel owl-carousel-carousel">
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2017/11/04/02/59/sunrise-2916338_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Stand Up Paddle</h3>
+                                    <p>Desde <strong>10€</strong></p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><span class="review-rate">4.5</span> <i class="icon-star"></i> 15 Reviews</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2014/03/23/19/57/rafting-293542_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Rafting</h3>
+                                    <p>Desde <strong>20€</strong></p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><span class="review-rate">4.8</span> <i class="icon-star"></i>17 Reviews</li> &nbsp;
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2017/08/07/23/50/climbing-2609319_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Escalada</h3>
+                                    <p>Desde <strong>18€</strong></p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><span class="review-rate">4.6</span> <i class="icon-star"></i>15 Reviews</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2015/03/08/12/17/bridge-664131_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Bungee Jumping</h3>
+                                    <p>Desde <strong>30€</strong></p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><span class="review-rate">4.8</span> <i class="icon-star"></i>19 Reviews</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 probootstrap-relative">
+                    <h3 class="mt0 mb30">Alguns testemunhos</h3>
+                    <ul class="probootstrap-owl-navigation absolute right">
+                        <li><a href="#" class="probootstrap-owl-prev"><i class="icon-chevron-thin-left"></i></a></li>
+                        <li><a href="#" class="probootstrap-owl-next"><i class="icon-chevron-thin-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 probootstrap-relative">
+                    <div class="owl-carousel owl-carousel-carousel">
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg" alt="" class="img-responsive" style="height: 254px">
+                                <div class="text">
+                                    <h3>Josefino Cabral</h3><br />
+                                    <p>Incrível!!! Obrigada RuralView Camping pelas ótimas condições e pelas incríveis atividades que fiz.</p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> 9 estrelas </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <img src="https://cdn.pixabay.com/photo/2015/11/26/00/14/woman-1063100_960_720.jpg" alt="" class="img-responsive" style="height: 254px">
+                                <div class="text">
+                                    <h3>Inês Bacalhau</h3><br />
+                                    <p> Adorei a minha estadia no Parque de Barca D'Alva foi algo inesquecível</p><br />
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> 8 estrelas </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2018/11/08/23/52/man-3803551_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Bruno Carvalho</h3><br />
+                                    <p>Rafting era algo que tive sempre medo de fazer mas graças à RuralView Camping já não tenho obrigado!</p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> 9 estrelas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="probootstrap-room">
+                                <a href="#"><img src="https://cdn.pixabay.com/photo/2016/03/23/08/34/woman-1274361_960_720.jpg" alt="" class="img-responsive" style="height: 254px"></a>
+                                <div class="text">
+                                    <h3>Carlota Reis</h3><br />
+                                    <p>Eu não sou uma pessoa de acampar mas ao passar uma semana no Parque de Campismo de Lima apercebi-me que tinha que repetir</p>
+                                    <div class="post-meta">
+                                        <ul>
+                                            <li><i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> 8 estrelas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- START: footer -->
+    <footer role="contentinfo" class="probootstrap-footer" style="background-color:rgba(192, 192, 192, 0.5);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <p class="mt40"><img src="imagens/RuralView.png" class="hires" width="200" height="110" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
+                        <p>
+                            Vem conhecer mais sobre a RuralView Camping.<br/>
+                            Se quiser juntar-se à RuralView Camping contacte-nos através dos contactos disponibilizados e nós ajudar-lo-emos em todos os passos.
+                        </p>
+                        <p><a href="about.html" class="link-with-icon">Mais <i class=" icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Contactos</h3>
+                        <ul class="probootstrap-contact-info">
+                            <li><i class="icon-mail"></i><span> ruralviewcamping@ua.pt</span></li>
+                            <li><i class="icon-phone2"></i><span> 235 165 973</span></li>
+                            <li><i class="icon-facebook"></i><span> RuralView Camping</span></li>
+                            <li><i class="icon-instagram"></i><span> @RuraView Camping</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: footer -->
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        if (sessionStorage.getItem('reg') == 'true') {
+            const name = sessionStorage.getItem('name');
+            $('#log').hide();
+            $('#sig').hide();
+            $('#rem').show();
+            $('#bem').text(name);
+            $('#sair').show();
+
+        } else {
+            $('#log').show();
+            $('#sig').show();
+            $('#rem').hide();
+            $('#sair').hide();
+        }
+
+    </script>
+</body>
+</html>

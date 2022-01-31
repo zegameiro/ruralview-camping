@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RuralView Camping Website</title>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="parqueDetails-css/bookingForm.css" />
+    <link rel="stylesheet" href="parqueDetails-css/info.css" />
+    <style>
+        .aa:hover {
+            color: green !important;
+        }
+
+        .probootstrap-owl-prev:hover {
+            background-color: green !important
+        }
+
+        .probootstrap-owl-next:hover {
+            background-color: green !important
+        }
+    </style>
+</head>
+<body>
+    <header role="banner" class="probootstrap-header">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <a href="index.html" class="probootstrap-logo visible-xs"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free Bootstrap Template by uicookies.com"></a>
+            
+            <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+            <div class="mobile-menu-overlay"></div>
+    
+            <nav role="navigation" class="probootstrap-nav hidden-xs">
+              <ul class="probootstrap-main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parques.html">Parques</a></li>
+                <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free Bootstrap Template by uicookies.com"></a></li>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <li><a href="about.html">About</a></li>
+              </ul>
+              <div class="extra-text visible-xs">
+                  <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+              </div>
+            </nav>
+            </div>
+        <!-- </div> -->
+      </header>
+
+        <!-- Collapsible wrapper -->
+        <!-- Container wrapper -->
+    </nav>
+
+    <div id="booking" class="section" style="background-image: url('https://lifecooler.com/files/registos/imagens/438022/334670.jpg')">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>Quinta de Odelouca</h1>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><span class="review-rate">4.1</span> <i class="icon-star" style="color:white"></i><span style="color:white">3 Reviews</span></li>
+                                </ul>
+                            </div>
+                            <p>A Quinta de Odelouca está situada em plena natureza. Dispõe de 21 lugares distribuídos por uma parte plana e outros em terraços. Aproveite a riqueza natural da paisagem envolvente: a sombra das oliveiras, a fauna, nomeadamente as aves, e as flores silvestres. À noite, pode sentar-se debaixo de um telhado de bilhões de estrelas com o som dos grilos, das rãs, do mocho-galego ou da coruja-do-mato (aluco) a acompanhá-lo.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-7">
+                        <div class="booking-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Check In</span>
+                                            <input class="form-control" type="date" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Noites</span>
+                                            <select id="noites" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Estadia</span>
+                                            <select id="estadia" class="form-control">
+                                                <option value="1">Tenda</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Adultos</span>
+                                            <select id="adults" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Crianças</span>
+                                            <select id="criancas" class="form-control">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button style="background-color:green; color:white" type="button" class="btn" onclick="getTotal()">Preço Final</button>
+                                </div>
+                                <div id="valor">Valor: 0</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="probootstrap-cta probootstrap-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="probootstrap-cta-heading">Marque atividades agora!</h2>
+                    <div class="probootstrap-cta-button-wrap"><a href="formatealod.html" class="btn" style="background-color:green; color:white">Marcar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section probootstrap-section-dark">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Informações</h2>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2071.7700979777865!2d-8.374518584213469!3d37.339666010293875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1addf2fa974809%3A0x3a405466c116e848!2sCamping%20Quinta%20de%20Odelouca!5e0!3m2!1spt-PT!2spt!4v1643326945386!5m2!1spt-PT!2spt" width="355" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Status:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color:green">ABERTO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Endereço:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Vale Grande de Baixo, Montes das Pitas, CxP 644-S</br>8375-215 São Marcos da Serra, Portugal
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Telefone:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        +351 915 656 685
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Balneários:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bungalows:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: red">NÃO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bar:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: red">NÃO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Minimercado:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: red">NÃO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Wi-fi:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="https://media-cdn.tripadvisor.com/media/photo-s/08/78/1e/c4/camping-quinta-de-odelouca.jpg"><img src="https://media-cdn.tripadvisor.com/media/photo-s/08/78/1e/c4/camping-quinta-de-odelouca.jpg" alt="Snow" style="max-width:260px; height:190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="http://www.allaboutportugal.pt/imagethumb/1700x/resize/744824"><img src="http://www.allaboutportugal.pt/imagethumb/1700x/resize/744824" alt="Forest" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://images.campeggi.com/9O9_mzaMYGLj5cSQGjGnE-fjulc=/fit-in/1200x0/ntc.crweb.it/dataManager/public/structures/1524560887709.jpg"><img src="https://images.campeggi.com/9O9_mzaMYGLj5cSQGjGnE-fjulc=/fit-in/1200x0/ntc.crweb.it/dataManager/public/structures/1524560887709.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://www.odyssea.eu/geodyssea/markers-photos/15948_1450349180.jpg"><img src="https://www.odyssea.eu/geodyssea/markers-photos/15948_1450349180.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-sun-o" aria-hidden="true"></i>&nbsp;Atividades</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-half">
+        <div class="image" style="background-image: url(https://www.mountainbikes.pt/uploads/s1/78/14/43/2/article-bicicletas-mulheres-5-pontos-distinguem-5cde6653956a8.jpeg);"></div>
+        <div class="text">
+            <div class="probootstrap-animate fadeInUp probootstrap-animated">
+                <h2 class="mt0">Rotas para bicicletas ou BTT</h2>
+                <p><img src="img/curve_white.svg" class="seperator" alt=""></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="color: white">Aventura-te pelas rotas para bicicletas/BTT espalhados pelo território algarvio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-certificate" aria-hidden="true"></i> Comentários de clientes</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3 b-1">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Mágico!</b></h5>
+                            <p class="mb-1">"Melhor parque para o contacto com a natureza!"</p>
+                            <small>Comentário de: Alexandre Goulart</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Que paz!</b></h5>
+                            <p class="mb-1">"À noite é um lugar tão calmo e dá para apreciar o meio."</p>
+                            <small>Comentário de: Sara Amorim</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Gostei!</b></h5>
+                            <p class="mb-1">"Os gerentes são muito simpáticos e fiquei a conhecer melhor a região"</p>
+                            <small>Comentário de: Vasco Cabral</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"><i class="fa fa-star-half-o" aria-hidden="true"></i>&nbsp;</i><b>Bom!</b></h5>
+                            <p class="mb-1">"Gostei, porém achei a zona demasiado calma."</p>
+                            <small>Comentário de: Pedro Silva</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START: footer -->
+    <footer role="contentinfo" class="probootstrap-footer" style="background-color:rgba(192, 192, 192, 0.5);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <p class="mt40"><img src="imagens/RuralView.png" class="hires" width="200" height="120" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
+                        <p>
+                            Vem conhecer mais sobre a RuralView Camping.<br/>
+                            Se quiser juntar-se à RuralView Camping contacte-nos através dos contactos disponibilizados e nós ajudar-lo-emos em todos os passos.
+                        </p>
+                        <p><a href="about.html" class="link-with-icon">Mais <i class=" icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Contactos</h3>
+                        <ul class="probootstrap-contact-info">
+                            <li><i class="icon-mail"></i><span> ruralviewcamping@ua.pt</span></li>
+                            <li><i class="icon-phone2"></i><span> 235 165 973</span></li>
+                            <li><i class="icon-facebook"></i><span> RuralView Camping</span></li>
+                            <li><i class="icon-instagram"></i><span> @RuraView Camping</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: footer -->
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="preco.js"></script>
+</body>
+</html>

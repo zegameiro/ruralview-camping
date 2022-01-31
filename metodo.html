@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../../Content/font-awesome.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+
+        .loginbox {
+            width: 320px;
+            height: 400px;
+            background: #fff;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+            opacity: 0.85;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: calc(50% - 50px);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" class="avatar">
+        <div style="float: right; margin-top: -40px"><a href="parques.html" style="cursor: pointer"><big> &times;</big></a></div>
+        <h1>Escolha o seu método de pagamento.</h1>
+        <div id="valortotal"><b>Total a pagar:</b> 0</div>
+        <button class="btn btn-outline-success" onclick="location.href = 'mbway.html'" style="margin-top: 100px; width:260px">MBWay</button>
+        <button onclick="location.href = 'cartaocredito.html'" class="btn btn-outline-success" style="margin-top: 100px; width:260px; margin-top: -200px"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Cartão de crédito/ débito</button>
+    </div>
+    <script src="../../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        });
+
+
+        // valortotal = lista[-1] + lista2[-1]
+        // var TotalPrice = JSON.parse(pay[pay.length - 1]) + JSON.parse(pay2[pay2.length - 1]); // soma último valor adicionado a {}
+        // 
+        // var TotalPrice = JSON.stringify(localStorage.getItem("pay"));
+        // var total = TotalPrice[TotalPrice.length -1].HotelPrice;
+        var TotalPrice = parseFloat(sessionStorage.getItem("preco1")) + parseFloat(sessionStorage.getItem("preco2"));
+        var usersec = document.getElementById('valortotal');
+        usersec.innerHTML = 'Total a pagar: '+ TotalPrice + '€';
+
+        let listafim = {
+            TotalPrice
+        }
+        console.log(listafim)
+
+        if (localStorage.getItem('fim') == null) {
+            let lstfim = [];
+            lstfim.push(listafim);
+            localStorage.setItem('fim', JSON.stringify(lstfim));
+        } else {
+            let lstfim = JSON.parse(localStorage.getItem('fim'));
+            lstfim.push(listafim);
+            localStorage.setItem('fim', JSON.stringify(fim));
+        }
+    </script>
+</body>
+</html>

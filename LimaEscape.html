@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RuralView Camping Website</title>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="parqueDetails-css/bookingForm.css" />
+    <link rel="stylesheet" href="parqueDetails-css/info.css" />
+    <style>
+        .aa:hover {
+            color: green !important;
+        }
+
+        .probootstrap-owl-prev:hover {
+            background-color: green !important
+        }
+
+        .probootstrap-owl-next:hover {
+            background-color: green !important
+        }
+    </style>
+</head>
+<body>
+    <header role="banner" class="probootstrap-header">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <a href="index.html" class="probootstrap-logo visible-xs"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free Bootstrap Template by uicookies.com"></a>
+            
+            <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+            <div class="mobile-menu-overlay"></div>
+    
+            <nav role="navigation" class="probootstrap-nav hidden-xs">
+              <ul class="probootstrap-main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parques.html">Parques</a></li>
+                <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="imagens/RuralView.png" class="hires" width="200" height="100"></a></li>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <li><a href="about.html">About</a></li>
+              </ul>
+              <div class="extra-text visible-xs">
+                  <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+              </div>
+            </nav>
+            </div>
+        <!-- </div> -->
+      </header>
+
+        <!-- Collapsible wrapper -->
+        <!-- Container wrapper -->
+    </nav>
+
+    <div id="booking" class="section" style="background-image: url('https://media.timeout.com/images/105255760/image.jpg')">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>Lima Escape</h1>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><span class="review-rate">4.4</span> <i class="icon-star" style="color:white"></i><span style="color:white">4 Reviews</span></li>
+                                </ul>
+                            </div>
+                            <p>Inserido numa península, rodeada pelos rios Lima, Froufe e Tamente e com a Serra Amarela pelas costas, o Lima Escape Camping e Glamping é um verdadeiro refúgio na Natureza. Espaços de campismo e caravanismo tradicional convivem com românticas Tendas de Glamour e modernos Bungalows de madeira feitos no estilo de “Casas na árvores” e “Bungalows coloridos”. O ambiente, com toda a natureza envolvente, é o da maior beleza e tranquilidade assegurada pelo cenário idílico do Parque Nacional da Peneda-Geres (Gerês).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-7">
+                        <div class="booking-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Check In</span>
+                                            <input class="form-control" type="date" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Noites</span>
+                                            <select id="noites" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Estadia</span>
+                                            <select id="estadia" class="form-control">
+                                                <option value="1">Tenda</option>
+                                                <option value="2">Bungalow</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Adultos</span>
+                                            <select id="adults" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Crianças</span>
+                                            <select id="criancas" class="form-control">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button style="background-color:green; color:white" type="button" class="btn" onclick="getTotal()">Preço Final</button>
+                                </div>
+                                <div id="valor">Valor: 0</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="probootstrap-cta probootstrap-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="probootstrap-cta-heading">Marque atividades agora!</h2>
+                    <div class="probootstrap-cta-button-wrap"><a href="formatealle.html" class="btn" style="background-color:green; color:white">Marcar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section probootstrap-section-dark">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Informações</h2>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11892.921051946525!2d-8.3221819!3d41.8233396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fd60399e2751834!2sLima%20Escape%20-%20Empreendimentos%20Tur%C3%ADsticos!5e0!3m2!1spt-PT!2spt!4v1643295344568!5m2!1spt-PT!2spt" width="355" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Status:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color:green">ABERTO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Endereço:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Lugar de Igreja 4980-312 Entre Ambos-os-Rios</br>
+                                        Ponte da Barca, Viana do Castelo, Portugal
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Telefone:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        +351 258 588 361
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Balneários:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bungalows:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bar:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Minimercado:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Wi-fi:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="https://pumpkin.pt/wp-content/uploads/2020/05/lima-escape-campismo-1024x768.jpg"><img src="https://pumpkin.pt/wp-content/uploads/2020/05/lima-escape-campismo-1024x768.jpg" alt="Snow" style="max-width:260px; height:190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://assets.bedful.com/images/ee36a8fa7d6de870cd0c76e9720bd5bcbc1ca776/large.jpg"><img src="https://assets.bedful.com/images/ee36a8fa7d6de870cd0c76e9720bd5bcbc1ca776/large.jpg" alt="Forest" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://www.lima-escape.pt/wp-content/uploads/2018/12/tenda-tipi-pequena.jpg"><img src="https://www.lima-escape.pt/wp-content/uploads/2018/12/tenda-tipi-pequena.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="https://lima-escape.pt/wp-content/uploads/2018/10/Bungalow-T11-view.jpg"><img src="https://lima-escape.pt/wp-content/uploads/2018/10/Bungalow-T11-view.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-sun-o" aria-hidden="true"></i>&nbsp;Atividades</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-half">
+        <div class="image" style="background-image: url(https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/d2/c2/52.jpg);"></div>
+        <div class="text">
+            <div class="probootstrap-animate fadeInUp probootstrap-animated">
+                <h2 class="mt0">KAYAK</h2>
+                <p><img src="img/curve_white.svg" class="seperator" alt=""></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="color: white">Vem andar de kayak no rio Lima pelo preço de 20 euros por pessoa. A sessão dura 3 horas e os hórarios disponíveis são: das 10h00 até 13h00 ou das 15h00 até 18h00.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-half">
+        <div class="text">
+            <div class="probootstrap-animate fadeInUp probootstrap-animated">
+                <h2 class="mt0">Stand Up Paddle (SUP)</h2>
+                <p><img src="img/curve_white.svg" class="seperator" alt=""></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="color:white">Preço: 30 euros. A sessão dura 3 horas e os horários disponíveis são: das 10h00 até 13h00 ou das 15h00 até 18h00.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url(https://www.evasoes.pt/files/2018/07/21891857_BINARY_FOTOGI001625-960x640_c.jpg);"></div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-certificate" aria-hidden="true"></i> Comentários de clientes</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3 b-1">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Experiência incrivel!!</b></h5>
+                            <p class="mb-1">"Adorei o espaço e as atividades propostas! Excelente trabalho!"</p>
+                            <small>Comentário de: António Castro</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>5 estrelas!</b></h5>
+                            <p class="mb-1">"Paisagem para o rio espetacular! Adorei!"</p>
+                            <small>Comentário de: Tiago Freitas</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Fantástico!</b></h5>
+                            <p class="mb-1">"Quem nunca foi não sabe o que está a perder!"</p>
+                            <small>Comentário de: Francisco Azevedo</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"><i class="fa fa-star-half-o" aria-hidden="true"></i>&nbsp;</i><b>Muito bom!</b></h5>
+                            <p class="mb-1">"Porém, podiam baixar um pouco os preços."</p>
+                            <small>Comentário de: Paulo Matos</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START: footer -->
+    <footer role="contentinfo" class="probootstrap-footer" style="background-color:rgba(192, 192, 192, 0.5);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <p class="mt40"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
+                        <p>
+                            Vem conhecer mais sobre a RuralView Camping.<br/>
+                            Se quiser juntar-se à RuralView Camping contacte-nos através dos contactos disponibilizados e nós ajudar-lo-emos em todos os passos.
+                        </p>
+                        <p><a href="about.html" class="link-with-icon">Mais <i class=" icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Contactos</h3>
+                        <ul class="probootstrap-contact-info">
+                            <li><i class="icon-mail"></i><span> ruralviewcamping@ua.pt</span></li>
+                            <li><i class="icon-phone2"></i><span> 235 165 973</span></li>
+                            <li><i class="icon-facebook"></i><span> RuralView Camping</span></li>
+                            <li><i class="icon-instagram"></i><span> @RuraView Camping</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: footer -->
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="preco.js"></script>
+</body>
+</html>

@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RuralView Camping Website</title>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="parqueDetails-css/bookingForm.css" />
+    <link rel="stylesheet" href="parqueDetails-css/info.css" />
+    <style>
+        .aa:hover {
+            color: green !important;
+        }
+
+        .probootstrap-owl-prev:hover {
+            background-color: green !important
+        }
+
+        .probootstrap-owl-next:hover {
+            background-color: green !important
+        }
+    </style>
+</head>
+<body>
+    <header role="banner" class="probootstrap-header">
+        <!-- <div class="container"> -->
+        <div class="row">
+            <a href="index.html" class="probootstrap-logo visible-xs"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free Bootstrap Template by uicookies.com"></a>
+            <a href="#" class="probootstrap-burger-menu visible-xs"><i>Menu</i></a>
+            <div class="mobile-menu-overlay"></div>
+    
+            <nav role="navigation" class="probootstrap-nav hidden-xs">
+              <ul class="probootstrap-main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parques.html">Parques</a></li>
+                <li class="hidden-xs probootstrap-logo-center"><a href="index.html"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free Bootstrap Template by uicookies.com"></a></li>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <li><a href="about.html">About</a></li>
+              </ul>
+              <div class="extra-text visible-xs">
+                  <a href="#" class="probootstrap-burger-menu"><i>Menu</i></a>
+              </div>
+            </nav>
+            </div>
+        <!-- </div> -->
+      </header>
+
+        <!-- Collapsible wrapper -->
+        <!-- Container wrapper -->
+    </nav>
+    <div id="booking" class="section" style="background-image: url(https://www.nit.pt/wp-content/uploads/2019/08/344184f33217d7fd5d90218d5208f9b0-754x394.jpg) ">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>Refúgio da Freita</h1>
+                            <div class="post-meta">
+                                <ul>
+                                    <li><span class="review-rate">4.0</span> <i class="icon-star" style="color:white"></i><span style="color:white">3 Reviews</span></li>
+                                </ul>
+                            </div>
+                            <p>
+                                Localiza-se em plena Serra da Freita, a 900 metros de altitude e a 15km do centro de Arouca. Está instalado num pequeno bosque sendo um dos destinos obrigatórios para os que gostam de desfrutar da natureza em todo o seu esplendor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-7">
+                        <div class="booking-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Check In</span>
+                                            <input class="form-control" type="date" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <span class="form-label">Noites</span>
+                                            <select id="noites" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Estadia</span>
+                                            <select id="estadia" class="form-control">
+                                                <option value="1">Tenda</option>
+                                                <option value="2">Bungalow</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Adultos</span>
+                                            <select id="adults" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Crianças</span>
+                                            <select id="criancas" class="form-control">
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                            <span class="select-arrow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button style="background-color:green; color:white" type="button" class="btn" onclick="getTotal()">Preço Final</button>
+                                </div>
+                                <div id="valor">Valor: 0</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="probootstrap-cta probootstrap-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="probootstrap-cta-heading">Marque atividades agora!</h2>
+                    <div class="probootstrap-cta-button-wrap"><a href="formatealsf.html" class="btn" style="background-color:green; color:white">Marcar</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section probootstrap-section-dark">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Informações</h2>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3016.92608048834!2d-8.294105384590122!3d40.873496379314695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2364dd2c2f6429%3A0x348fbe475ba09e71!2sNaturVeredas%2C%20Ref%C3%BAgio%20da%20Freita!5e0!3m2!1spt-BR!2spt!4v1643326042194!5m2!1spt-BR!2spt" width="355" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Status:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color:green">ABERTO</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Endereço:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Merujal, 4540-659, Urrô<br />
+                                        Aveiro, Arouca, Merujal
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Telefone:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        +351 256 947 723
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Balneários:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bungalows:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Bar:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Minimercado:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h5 class="mb-0"><b>Wi-fi:</b></h5>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <span style="color: green">SIM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="http://aroucageopark.pt/media/images/250705_407515779298452_1871490407_n.width-1700.jpg"><img src="http://aroucageopark.pt/media/images/250705_407515779298452_1871490407_n.width-1700.jpg" alt="Snow" style="max-width:260px; height:190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="http://aroucageopark.pt/media/images/IMG_2869.width-1700.jpg"><img src="http://aroucageopark.pt/media/images/IMG_2869.width-1700.jpg" alt="Forest" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="http://aroucageopark.pt/media/images/Parque_de_Campismo.width-1700.jpg"><img src="http://aroucageopark.pt/media/images/Parque_de_Campismo.width-1700.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="http://aroucageopark.pt/media/images/IMG_2882.width-1700.jpg"><img src="http://aroucageopark.pt/media/images/IMG_2882.width-1700.jpg" alt="Mountains" style="max-width: 260px; height: 190px"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-sun-o" aria-hidden="true"></i>&nbsp;Atividades</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-half">
+        <div class="image" style="background-image: url(https://www.diarioaveiro.pt/files/news/5c657b4722a2a.png);"></div>
+        <div class="text">
+            <div class="probootstrap-animate fadeInUp probootstrap-animated">
+                <h2 class="mt0">Ciclismo</h2>
+                <p><img src="img/curve_white.svg" class="seperator" alt=""></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="color: white">
+                            Preço:
+                            3 pessoas - 18.75 /pessoa<br />
+
+                            4 pessoas - 22,50€ /pessoa<br />
+
+                            5 pessoas - 26,25€ /pessoa<br />
+
+                            O passeia demorará cerca de 4 horas
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-half">
+        <div class="text">
+            <div class="probootstrap-animate fadeInUp probootstrap-animated">
+                <h2 class="mt0">Escalada</h2>
+                <p><img src="img/curve_white.svg" class="seperator" alt=""></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p style="color:white">
+                            Preço:
+
+                            1 pessoas - 12,35€<br />
+
+                            2 pessoas - 19,65€ /pessoa<br />
+
+                            3 pessoas - 28,95€ /pessoa.<br />
+
+                            O tempo máximo da escalada é 4 horas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image" style="background-image: url(https://www.latitude41.pt/programas/multiactividades/images/multiactividades_freita_6.jpg); "></div>
+    </section>
+    <section class="probootstrap-section">
+        <div class="container">
+            <div class="row mb30">
+                <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+                    <h2><i class="fa fa-certificate" aria-hidden="true"></i> Comentários de clientes</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3 b-1">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Experiência incrivel!!</b></h5>
+                            <p class="mb-1">"Que espaço ótimo para acampar!"</p>
+                            <small>Comentário de: Raquel Vacas</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>5 estrelas!</b></h5>
+                            <p class="mb-1">"Foi fantástico a escalada!"</p>
+                            <small>Comentário de: Telmo Valente</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<b>Fantástico!</b></h5>
+                            <p class="mb-1">"Quem não gosta de acampar que experimente este sítio que muda logo de opinião"</p>
+                            <small>Comentário de: Daniel Gomes</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <h5 class="mb-1"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"><i class="fa fa-star-half-o" aria-hidden="true"></i>&nbsp;</i><b>Bom!</b></h5>
+                            <p class="mb-1">"Acho que as condições sanitárias poderiam ser melhores"</p>
+                            <small>Comentário de: Vitória Campos</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START: footer -->
+    <footer role="contentinfo" class="probootstrap-footer" style="background-color:rgba(192, 192, 192, 0.5);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <p class="mt40"><img src="imagens/RuralView.png" class="hires" width="200" height="100" alt="Free HTML5 Bootstrap Template by uicookies.com"></p>
+                        <p>
+                            Vem conhecer mais sobre a RuralView Camping.<br/>
+                            Se quiser juntar-se à RuralView Camping contacte-nos através dos contactos disponibilizados e nós ajudar-lo-emos em todos os passos.
+                        </p>
+                        <p><a href="about.html" class="link-with-icon">Mais <i class=" icon-chevron-right"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Contactos</h3>
+                        <ul class="probootstrap-contact-info">
+                            <li><i class="icon-mail"></i><span> ruralviewcamping@ua.pt</span></li>
+                            <li><i class="icon-phone2"></i><span> 235 165 973</span></li>
+                            <li><i class="icon-facebook"></i><span> RuralView Camping</span></li>
+                            <li><i class="icon-instagram"></i><span> @RuraView Camping</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END: footer -->
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="preco.js"></script>
+</body>
+</html>

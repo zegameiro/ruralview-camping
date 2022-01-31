@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RuralView Camping Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../../lib/font-awesome/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+        .loginbox{
+            width: 320px;
+            height: 560px;
+            background: #fff;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+            opacity: 0.85;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: calc(50% - 50px);
+        }
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .loginbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        .loginbox input{
+            width: 100%;
+            margin-bottom: 20px;   
+        }
+        .loginbox input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            background: transparent;
+            height: 40px;
+            color: #000;
+            font-size: 16px;
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #cc6d00;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            color: #000;
+        }
+    </style>
+</head>
+<body> 
+    <div class="loginbox">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" class="avatar">
+        <div style="float: right; margin-top: -40px"><a href="parques.html" style="cursor: pointer"><big> &times;</big></a></div>
+        <div class="mb-0"><h1 style="color: green !important; font-size: medium; text-align: left;"><b>Existe disponibilidade</b></h1></div>
+        <div class="mt-0"><h5><p>Marcação de atividades:</p></h5></div>
+        <p>Atividade</p>
+        <select id="atividades" class="form-control">
+            <option value="0">---Nenhuma---</option>
+            <option value="1">Bungee Jumping</option>
+            <option value="2">Stand Up Paddle</option>
+            <span class="select-arrow"></span>
+        </select>
+        <div style="margin-top:20px;"><p>Nº de pessoas</p></div>
+        <select id="grupo" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <span class="select-arrow"></span>
+        </select>
+        <div class="mt-5"><h5><p>Aluguer de equipamento:</p></h5></div>
+        <div><p>Nº de tendas</p></div>
+        <select id="aluguer" class="form-control mb-5">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <span class="select-arrow"></span>
+        </select>
+        <!-- <div class="form-btn">
+        </div> -->
+        <div class="row align-items-baseline" style="align-items: center;">
+            <button style="background-color:green; color:white; margin-right:50px; width:120px;" type="button" class="btn" onclick="getTotal2()">Preço Final</button>
+            <div><a href="metodo.html" class="btn" style="background-color: green; color:white; width:120px;">Pagar</a></div>
+       </div>
+        <div id="valor2">Valor: 0</div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="preco2.js"></script>
+</body>
+</html>

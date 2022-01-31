@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Log in</title>
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+        .loginbox{
+            width: 320px;
+            height: 400px;
+            background: #fff;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+            opacity: 0.85;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: calc(50% - 50px);
+        }
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .loginbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+
+        }
+        .loginbox input{
+            width: 100%;
+            margin-bottom: 20px;   
+        }
+        .loginbox input[type="text"], input[type="password"]
+        {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            background: transparent;
+            height: 40px;
+            color: #000;
+            font-size: 16px;
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #cc6d00;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            color: #000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" class="avatar">
+        <h1>Login</h1>
+                <p>Email</p>
+                <input id="email_login" type="text" name="" placeholder="Insira o Seu Email">
+                <p>Password</p>
+                <input id="password_login" type="password" name="" placeholder="Insira a Sua Password">
+                <input id="sub" type="submit" name="" value="Login">
+                <h4 id="error_message" style="color: red; text-align: center; display: none;"><small><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Username ou password estão inválidos</small></h4>
+
+        
+    </div>
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sub').click(function () {
+                var val_email = $('#email_login').val();
+                var val_password = $('#password_login').val();
+
+                if(localStorage.getItem('info') == null){
+                    $('#error_message').show();
+
+                }else{
+                    var accounts_array = JSON.parse(localStorage.getItem('info'));
+
+                    for(var i = 0; accounts_array.length; i++){
+
+                        if ((val_email == accounts_array[i].email) & (val_password == accounts_array[i].pass)){
+                            $('#error_message').hide();
+                            console.log('Login Success');
+                            sessionStorage.setItem('reg', 'true');
+                            sessionStorage.setItem('name', accounts_array[i].nome);
+                            window.open('index.html', '_self');
+                            break;
+                        }else{
+                            $('#error_message').show();
+                            sessionStorage.setItem('reg', 'false');
+                        }
+                    }
+                }
+        });
+    });
+    </script>
+
+</body>
+</html>

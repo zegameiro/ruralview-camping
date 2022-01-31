@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_960_720.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+        }
+
+        .loginbox {
+            width: 600px;
+            height: 450px;
+            background: #fff;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+            border-radius: 10px;
+            opacity: 0.85;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12%;
+            left: calc(50% - 50px);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" class="avatar">
+        <div style="float: right; margin-top: -40px"><a href="metodo.html" style="cursor: pointer"><big> &times;</big></a></div>
+        <h1 id="ctudo" style="display: block">Por favor introduza as informações: </h1>
+        <h1 id="done" style="display: none"> Obrigado pela sua escolha, todas as informações serão enviadas para o seu email</h1>
+        <div id="tud" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Nome no cartão: </p>
+                </div>
+                <div class="col-md-8">
+                    <input id="nome" class="form-control" style="width: 350px" type="text" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <p>Número do cartão no cartão: </p>
+                </div>
+                <div class="col-md-8">
+                    <input id="cartao" class="form-control" placeholder="XXXX - XXXX - XXXX - XXXX" style="width: 350px" type="text" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p class="mb-2">Data de Validade:</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-2">Código de segurança:</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <input id="data" class="form-control" type="month" />
+                </div>
+                <div class="col-md-6">
+                    <input id="code" class="form-control" type="text" placeholder="XXX" />
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <button onclick="return validate()" id="pay" class="btn btn-outline-success"><i class="fa fa-cc-mastercard" aria-hidden="true"></i> Pagar</button>
+                </div>
+
+            </div>
+            <div id="error" class="row mt-4" style="float: right; display: none">
+                <p style="color: red;"><small><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Um dos campos não foi devidamente preenchido</small></p>
+            </div>
+        </div>
+        <div id="suc" style="display: none" class="row mt-4">
+            <div class="col-md-4">
+                <button onclick="location.href='index.html'"class="btn btn-outline-success"> Página inicial</button>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    <script src="../../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../Scripts/bootstrap.bundle.min.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script>
+           function validate() {
+               var retVal = true;
+               var nome = $('#nome').val().trim();
+               var cartao = $('#cartao').val().trim();
+               var data = $('#data').val();
+               var code = $('#code').val().trim();
+               if (nome.length < 4 || nome.length > 50 || cartao.length != 16 || data.length == 0 || code.length != 3) {
+                   retVal = false;
+                   $('#error').show();
+               } else {
+                   $('#error').hide();
+                   $('#ctudo').hide();
+                   $('#tud').hide();
+                   $('#done').show();
+                   $('#suc').show();
+               }
+        };
+    </script>
+
+</body>
+</html>
